@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min max (width, height)</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+        div {
+            width: 150px;
+            background: blue;
+            min-height: 80px;
+            max-height: 170px;
+            border: 5px solid red;
+            padding: 5px;
+            float: left;
+            margin: 15px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This div element has initial height of defined size...
+    </div>
+    <div>
+        ... but it adapts (if necessary) its height according to the current content size thanks to min-height property.
+    </div>
+    <div>
+        On the other hand thanks to max-height property it can protect against growing too much by setting its maximum height. That's why you can't see this paragraph in its entirety. Although I can assure you that there is nothing interesting there anymore.
+    </div>
+</body>
+</html>
